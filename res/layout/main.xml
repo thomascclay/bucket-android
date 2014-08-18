@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+   <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/lets_play"
+      android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/add_words"
+      android:id="@+id/txt_add_words"/>
+
+   <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edt_phrase"/>
+
+   <Button
+      android:layout_width="101dp"
+      android:layout_height="wrap_content"
+      android:text="@string/add"
+      android:id="@+id/btn_add"
+      android:layout_gravity="right"/>
+
+   <ListView
+      android:layout_width="match_parent"
+      android:layout_height="197dp"
+      android:id="@+id/listView"
+      android:layout_gravity="center_horizontal"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/submit_words"
+      android:id="@+id/txt_submit_words"/>
+
+   <Button
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:text="@string/submit"
+      android:id="@+id/btn_submit"
+      android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+
