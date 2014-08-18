@@ -2,8 +2,9 @@
 <resources>
    <string name="app_name">bucket</string>
    <string name="lets_play">Let\'s fucking play bucket</string>
-   <string name="add_words">Type your phrase and click add to make a list of phrases to add to the bucket</string>
+   <string name="add_words">Type your phrase and click add to make a list of phrases to put in the bucket</string>
    <string name="submit_words">Once your phrases look good, press submit to put them in the bucket</string>
+   <string name="word_list">You can click on a phrase in the list to bring it back to the edit box</string>
    <string name="add">Add</string>
    <string name="submit">Submit</string>
 </resources>

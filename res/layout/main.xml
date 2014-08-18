@@ -28,10 +28,16 @@
       android:id="@+id/btn_add"
       android:layout_gravity="right"/>
 
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/word_list"
+      android:id="@+id/textView"/>
+
    <ListView
       android:layout_width="match_parent"
       android:layout_height="197dp"
-      android:id="@+id/listView"
+      android:id="@+id/lst_phrases"
       android:layout_gravity="center_horizontal"/>
 
    <TextView
