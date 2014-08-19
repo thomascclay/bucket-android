@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
 
     public void submitAction() {
         ArrayList<String> params = (ArrayList<String>) phrasesArray.clone();
-        params.add(0, "http://10.0.2.2:4567/submit");
+        params.add(0, "http://10.0.2.2:4567/submit/z");
         PostTask task = new PostTask();
         task.execute(params.toArray(new String[params.size()]));
     }
@@ -154,7 +154,7 @@ public class MainActivity extends Activity {
             try {
                 List<BasicNameValuePair> nameValuePairs = new ArrayList<BasicNameValuePair>();
                 for (int i = 1; i < params.length; i++) {
-                    nameValuePairs.add(new BasicNameValuePair(Integer.toString(i), params[i]));
+                    nameValuePairs.add(new BasicNameValuePair("phrase" + i, params[i]));
                 }
 
                 httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
