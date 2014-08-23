@@ -6,14 +6,37 @@
    android:layout_height="fill_parent"
    xmlns:android="http://schemas.android.com/apk/res/android">
 
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/getting_started"
+      android:id="@+id/textView"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"/>
+
    <Button
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/start_game"
-      android:id="@+id/btn_start"
-      android:onClick="startGame"
-      android:layout_centerVertical="true"
-      android:layout_centerHorizontal="true"
-      android:height="175dp"
-      android:width="225dp"/>
+      android:text="@string/join_game"
+      android:id="@+id/button"
+      android:onClick="joinGameButtonAction"
+      android:height="100dp"
+      android:width="200dp"
+      android:layout_marginTop="42dp"
+      android:layout_below="@+id/textView"
+      android:layout_centerHorizontal="true"/>
+
+   <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/create_game"
+      android:onClick="createGameButtonAction"
+      android:id="@+id/button2"
+      android:height="100dp"
+      android:width="200dp"
+      android:layout_marginTop="47dp"
+      android:layout_below="@+id/button"
+      android:layout_alignLeft="@+id/button"/>
+
+
 </RelativeLayout>

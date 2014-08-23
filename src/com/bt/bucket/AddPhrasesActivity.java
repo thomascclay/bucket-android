@@ -70,7 +70,7 @@ public class AddPhrasesActivity extends Activity {
 
     public void submitAction() {
         ArrayList<String> params = (ArrayList<String>) phrasesArray.clone();
-        params.add(0, Configuration.getSubmissionUrl());
+        params.add(0, GameManager.getSubmissionUrl());
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
         task.execute(params.toArray(new String[params.size()]));
     }
